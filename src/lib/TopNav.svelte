@@ -11,6 +11,7 @@
 
 <div class="toolbar-container">
     <p>Framework Battle Royale: <strong>SvelteKit</strong></p>
+    
     <GButton on:click={openDialog}>Open Dialog</GButton>
 </div>
 <GDialog>

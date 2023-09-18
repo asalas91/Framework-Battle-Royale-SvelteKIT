@@ -1,14 +1,11 @@
 <script lang="ts">
 	import { dialogState } from "../shared-state";
 	import GButton from "./GButton.svelte";
-
-    console.log('dialogState',dialogState.subscribe(val => console.log('val',val)));
     
     $: isOpen = `${$dialogState ? 'open' : ''} dialog-background`;
 
     const closeDialog = () => {
         dialogState.set(false)
-        console.log(dialogState)
     }
 </script>
 

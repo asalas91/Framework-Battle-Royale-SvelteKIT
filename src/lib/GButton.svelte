@@ -11,7 +11,7 @@
     }
 </script>
 
-<button class="button" on:click={handleClick} type={type}>
+<button class="button bg-blue-700 hover:bg-blue-600 px-4 py-2 rounded-md justify-center items-center" on:click={handleClick} {type}>
     <slot />
 </button>
 
